@@ -1,0 +1,53 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 50% 97%;
+    --foreground: 155 32% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 155 32% 12%;
+
+    --primary: 135 64% 43%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 30% 94%;
+    --secondary-foreground: 155 32% 12%;
+
+    --accent: 140 85% 85%;
+    --accent-foreground: 135 64% 43%;
+
+    --button: 135 64% 43%;
+    --button-hover: 135 54% 33%;
+    --button-text: 0 0% 100%;
+
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))] antialiased;
+  }
+}
+
+/* Card gradient background */
+.card-gradient {
+  @apply bg-gradient-to-br from-white via-green-50 to-green-100;
+}
+
+/* Button styling */
+.green-btn {
+  @apply px-6 py-2 rounded-lg font-bold shadow text-white transition-all;
+  background: hsl(var(--button));
+}
+.green-btn:hover {
+  background: hsl(var(--button-hover));
+}
+
+/* Section styling */
+.section {
+  @apply max-w-3xl mx-auto px-4 py-12;
+}
+

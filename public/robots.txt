@@ -1,0 +1,27 @@
+
+# Allow all web robots to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tuteguy.com/sitemap.xml
+
+# Specific rules for major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Discourage crawling of auth pages
+User-agent: *
+Disallow: /auth
